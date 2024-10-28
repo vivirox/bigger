@@ -7,7 +7,6 @@ import { ModelVendorLocalAI } from './localai/localai.vendor';
 import { ModelVendorMistral } from './mistral/mistral.vendor';
 import { ModelVendorOllama } from './ollama/ollama.vendor';
 import { ModelVendorOpenAI } from './openai/openai.vendor';
-import { ModelVendorOpenRouter } from './openrouter/openrouter.vendor';
 import { ModelVendorPerplexity } from './perplexity/perplexity.vendor';
 import { ModelVendorTogetherAI } from './togetherai/togetherai.vendor';
 
@@ -41,7 +40,6 @@ const MODEL_VENDOR_REGISTRY: Record<ModelVendorId, IModelVendor> = {
   mistral: ModelVendorMistral,
   ollama: ModelVendorOllama,
   openai: ModelVendorOpenAI,
-  openrouter: ModelVendorOpenRouter,
   perplexity: ModelVendorPerplexity,
   togetherai: ModelVendorTogetherAI,
   deepseek: ModelVendorDeepseek,

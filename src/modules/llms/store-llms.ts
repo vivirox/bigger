@@ -2,8 +2,6 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 import type { ModelVendorId } from './vendors/vendors.registry';
-import type { SourceSetupOpenRouter } from './vendors/openrouter/openrouter.vendor';
-
 
 /**
  * Large Language Model - description and configuration (data object, stored)
@@ -250,7 +248,7 @@ export const useModelsStore = create<LlmsStore>()(
           if (!openRouterSource) return state;
           return {
             sources: state.sources.map(source => source.id === openRouterSource.id
-              ? { ...source, setup: { ...source.setup, oaiKey: key satisfies SourceSetupOpenRouter['oaiKey'] } }
+              ? { ...source, setup: { ...source.setup, oaiKey: ['oaiKey'] } }
               : source),
           };
         }),
