@@ -19,7 +19,7 @@ Or fork & run on Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fenricoros%2Fbig-AGI&env=OPENAI_API_KEY&envDescription=Backend%20API%20keys%2C%20optional%20and%20may%20be%20overridden%20by%20the%20UI.&envLink=https%3A%2F%2Fgithub.com%2Fenricoros%2Fbig-AGI%2Fblob%2Fmain%2Fdocs%2Fenvironment-variables.md&project-name=big-AGI)
 
-### Quick links: 👉 [roadmap](https://github.com/users/enricoros/projects/4/views/2) 👉 [installation](docs/installation.md) 👉 [documentation](docs/README.md)
+## Quick links: 👉 [roadmap](https://github.com/users/enricoros/projects/4/views/2) 👉 [installation](docs/installation.md) 👉 [documentation](docs/README.md)
 
 ### What's New in 1.16.1...1.16.8 · Sep 13, 2024 (patch releases)
 
@@ -51,7 +51,7 @@ Or fork & run on Vercel
 
 ![big-AGI Milestone](https://github.com/enricoros/big-AGI/assets/32999/47fddbb1-9bd6-4b58-ace4-781dfcb80923)
 
-- 🥇 Today we <b>celebrate commit 3000</b> in just over one year, and going stronger 🚀
+- 🥇 Today we [b]celebrate commit 3000[/b] in just over one year, and going stronger 🚀
 - 📢️ Thanks everyone for your support and words of love for Big-AGI, we are committed to creating the best AI experiences for everyone.
 
 ### What's New in 1.15.0 · April 1, 2024 · Beam
@@ -64,8 +64,8 @@ Or fork & run on Vercel
 - 1.15.1: Support for Gemini Pro 1.5 and OpenAI Turbo models
 - Beast release, over 430 commits, 10,000+ lines changed: [release notes](https://github.com/enricoros/big-AGI/releases/tag/v1.15.0), and changes [v1.14.1...v1.15.0](https://github.com/enricoros/big-AGI/compare/v1.14.1...v1.15.0)
 
-<details>
-<summary>What's New in 1.14.1 · March 7, 2024 · Modelmorphic</summary>
+[details]
+[summary]What's New in 1.14.1 · March 7, 2024 · Modelmorphic[/summary]
 
 - **Anthropic** [Claude-3](https://www.anthropic.com/news/claude-3-family) model family support. [#443](https://github.com/enricoros/big-AGI/issues/443)
 - New **[Perplexity](https://www.perplexity.ai/)** and **[Groq](https://groq.com/)** integration (thanks @Penagwin). [#407](https://github.com/enricoros/big-AGI/issues/407), [#427](https://github.com/enricoros/big-AGI/issues/427)
@@ -75,12 +75,12 @@ Or fork & run on Vercel
 - Enhanced UX with auto-sizing charts, refined search and folder functionalities, perfected scaling
 - And with more UI improvements, documentation, bug fixes (20 tickets), and developer enhancements
 
-</details>
+[/details]
 
-<details>
-<summary>What's New in 1.13.0 · Feb 8, 2024 · Multi + Mind</summary>
+[details]
+[summary]What's New in 1.13.0 · Feb 8, 2024 · Multi + Mind[/summary]
 
-https://github.com/enricoros/big-AGI/assets/32999/01732528-730e-41dc-adc7-511385686b13
+<https://github.com/enricoros/big-AGI/assets/32999/01732528-730e-41dc-adc7-511385686b13>
 
 - **Side-by-Side Split Windows**: multitask with parallel conversations. [#208](https://github.com/enricoros/big-AGI/issues/208)
 - **Multi-Chat Mode**: message everyone, all at once. [#388](https://github.com/enricoros/big-AGI/issues/388)
@@ -90,12 +90,12 @@ https://github.com/enricoros/big-AGI/assets/32999/01732528-730e-41dc-adc7-511385
 - Better looking chats with improved spacing, fonts, and menus
 - More: new video player, [LM Studio tutorial](https://github.com/enricoros/big-AGI/blob/main/docs/config-local-lmstudio.md) (thanks @aj47), [MongoDB support](https://github.com/enricoros/big-AGI/blob/main/docs/deploy-database.md) (thanks @ranfysvalle02), and speedups
 
-</details>
+[/details]
 
-<details>
-<summary>What's New in 1.12.0 · Jan 26, 2024 · AGI Hotline</summary>
+[details]
+[summary]What's New in 1.12.0 · Jan 26, 2024 · AGI Hotline[/summary]
 
-https://github.com/enricoros/big-AGI/assets/32999/95ceb03c-945d-4fdd-9a9f-3317beb54f3f
+<https://github.com/enricoros/big-AGI/assets/32999/95ceb03c-945d-4fdd-9a9f-3317beb54f3f>
 
 - **Voice Calls**: real-time voice call your personas out of the blue or in relation to a chat [#354](https://github.com/enricoros/big-AGI/issues/354)
 - Support **OpenAI 0125** Models. [#364](https://github.com/enricoros/big-AGI/issues/364)
@@ -106,12 +106,12 @@ https://github.com/enricoros/big-AGI/assets/32999/95ceb03c-945d-4fdd-9a9f-3317be
 - Paste tables from Excel [#286](https://github.com/enricoros/big-AGI/issues/286)
 - Ollama model updates and context window detection fixes [#309](https://github.com/enricoros/big-AGI/issues/309)
 
-</details>
+[/details]
 
-<details>
-<summary>What's New in 1.11.0 · Jan 16, 2024 · Singularity</summary>
+[details]
+[summary]What's New in 1.11.0 · Jan 16, 2024 · Singularity[/summary]
 
-https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cfcb110c68
+<https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cfcb110c68>
 
 - **Find chats**: search in titles and content, with frequency ranking. [#329](https://github.com/enricoros/big-AGI/issues/329)
 - **Commands**: command auto-completion (type '/'). [#327](https://github.com/enricoros/big-AGI/issues/327)
@@ -122,8 +122,8 @@ https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cf
 
 </details>
 
-<details>
-<summary>What's New in 1.10.0 · Jan 6, 2024 · The Year of AGI</summary>
+[details]
+[summary]What's New in 1.10.0 · Jan 6, 2024 · The Year of AGI[/summary]
 
 - **New UI**: for both desktop and mobile, sets the stage for future scale. [#201](https://github.com/enricoros/big-AGI/issues/201)
 - **Conversation Folders**: enhanced conversation organization. [#321](https://github.com/enricoros/big-AGI/issues/321)
@@ -132,38 +132,67 @@ https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cf
 - Large performance optimizations
 - Developer enhancements: new UI framework, updated documentation for proxy settings on browserless/docker
 
-</details>
+[/details]
 
 For full details and former releases, check out the [changelog](docs/changelog.md).
 
 ## 👉 Key Features ✨
 
 | ![Advanced AI](https://img.shields.io/badge/Advanced%20AI-32383e?style=for-the-badge&logo=ai&logoColor=white) | ![100+ AI Models](https://img.shields.io/badge/100%2B%20AI%20Models-32383e?style=for-the-badge&logo=ai&logoColor=white) | ![Flow-state UX](https://img.shields.io/badge/Flow--state%20UX-32383e?style=for-the-badge&logo=flow&logoColor=white) | ![Privacy First](https://img.shields.io/badge/Privacy%20First-32383e?style=for-the-badge&logo=privacy&logoColor=white) | ![Advanced Tools](https://img.shields.io/badge/Fun%20To%20Use-f22a85?style=for-the-badge&logo=tools&logoColor=white) |  
-|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------| 
-| **Chat**<br/>**Call**<br/>**Beam**<br/>**Draw**, ...                                                          | Local & Cloud<br/>Open & Closed<br/>Cheap & Heavy<br/>Google, Mistral, ...                                              | Attachments<br/>Diagrams<br/>Multi-Chat<br/>Mobile-first UI                                                          | Stored Locally<br/>Easy self-Host<br/>Local actions<br/>Data = Gold                                                    | AI Personas<br/>Voice Modes<br/>Screen Capture<br/>Camera + OCR                                                      |
+|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 
 ![big-AGI screenshot](docs/pixels/big-AGI-compo-20240201_small.png)
 
 You can easily configure 100s of AI models in big-AGI:
 
-| **AI models**       | _supported vendors_                                                                                                                                                                                                             |
-|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Opensource Servers  | [LocalAI](https://localai.io/) (multimodal) · [Ollama](https://ollama.com/) · [Oobabooga](https://github.com/oobabooga/text-generation-webui)                                                                                   |
-| Local Servers       | [LM Studio](https://lmstudio.ai/)                                                                                                                                                                                               |
-| Multimodal services | [Azure](https://azure.microsoft.com/en-us/products/ai-services/openai-service) · [Google Gemini](https://ai.google.dev/) · [OpenAI](https://platform.openai.com/docs/overview)                                                  |
-| Language services   | [Anthropic](https://anthropic.com) · [Groq](https://wow.groq.com/) · [Mistral](https://mistral.ai/) · [OpenRouter](https://openrouter.ai/) · [Perplexity](https://www.perplexity.ai/) · [Together AI](https://www.together.ai/) | 
-| Image services      | [Prodia](https://prodia.com/) (SDXL)                                                                                                                                                                                            | 
-| Speech services     | [ElevenLabs](https://elevenlabs.io) (Voice synthesis / cloning)                                                                                                                                                                 | 
+| **AI models** |
+
+[supported]
+
+Opensource Servers
+
+[LocalAI](https://localai.io/)
+[Ollama](https://ollama.com/) [text-generation-webui]
+
+[LM Studio]
+
+| Multimodal services |
+[Azure](https://azure.microsoft.com/en-us/products/ai-services/openai-service)
+[Google Gemini](https://ai.google.dev/)
+[OpenAI](https://platform.openai.com/docs/overview)  
+
+| Language services   |
+
+[Anthropic](https://anthropic.com)
+[Groq](https://wow.groq.com/)
+[Mistral](https://mistral.ai/)
+[OpenRouter](https://openrouter.ai/)
+[Perplexity](https://www.perplexity.ai/)
+[Together AI](https://www.together.ai/)
+
+| Image services |
+
+[Prodia](https://prodia.com/)
+
+(SDXL)
+
+| Speech services |
+
+[ElevenLabs](https://elevenlabs.io)
+
+(Voice synthesis/Cloning)
 
 Add extra functionality with these integrations:
 
-| **More**     | _integrations_                                                                                                 |
-|:-------------|:---------------------------------------------------------------------------------------------------------------| 
+| **More** |
+
+| Integrations |
+
 | Web Browse   | [Browserless](https://www.browserless.io/) · [Puppeteer](https://pptr.dev/)-based                              |
 | Web Search   | [Google CSE](https://programmablesearchengine.google.com/)                                                     |
 | Code Editors | [CodePen](https://codepen.io/pen/) · [StackBlitz](https://stackblitz.com/) · [JSFiddle](https://jsfiddle.net/) |
-| Sharing      | [Paste.gg](https://paste.gg/) (Paste chats)                                                                    | 
-| Tracking     | [Helicone](https://www.helicone.ai) (LLM Observability)                                                        | 
+| Sharing      | [Paste.gg](https://paste.gg/) (Paste chats)                                                                    |
+| Tracking     | [Helicone](https://www.helicone.ai) (LLM Observability)                                                        |
 
 [//]: # (- [x] **Flow-state UX** for uncompromised productivity)
 
@@ -181,8 +210,6 @@ Add extra functionality with these integrations:
 
 [//]: # (- [x] **Open Roadmap**: Contribute to the progress of big-AGI)
 
-<br/>
-
 ## 🚀 Installation
 
 To get started with big-AGI, follow our comprehensive [Installation Guide](docs/installation.md).
@@ -197,9 +224,7 @@ to set up big-AGI quickly and easily.
 
 Or bring your API keys and jump straight into our free instance on [big-AGI.com](https://big-agi.com).
 
-<br/>
-
-# 🌟 Get Involved!
+## 🌟 Get Involved
 
 [//]: # ([![Official Discord]&#40;https://img.shields.io/discord/1098796266906980422?label=discord&logo=discord&logoColor=%23fff&style=for-the-badge&#41;]&#40;https://discord.gg/MkH4qj2Jp9&#41;)
 [![Official Discord](https://discordapp.com/api/guilds/1098796266906980422/widget.png?style=banner2)](https://discord.gg/MkH4qj2Jp9)
@@ -209,8 +234,6 @@ Or bring your API keys and jump straight into our free instance on [big-AGI.com]
 - [ ] 🚀 **Do you like code**? You'll love this gem of a project! [_Pick up a task!_](https://github.com/users/enricoros/projects/4/views/4) - _easy_ to _pro_
 - [ ] 💡 Got a feature suggestion? [_Add your roadmap ideas_](https://github.com/enricoros/big-agi/issues/new?&template=roadmap-request.md)
 - [ ] ✨ [Deploy](docs/installation.md) your [fork](docs/customizations.md) for your friends and family, or [customize it for work](docs/customizations.md)
-
-<br/>
 
 [//]: # ([![GitHub stars]&#40;https://img.shields.io/github/stars/enricoros/big-agi&#41;]&#40;https://github.com/enricoros/big-agi/stargazers&#41;)
 

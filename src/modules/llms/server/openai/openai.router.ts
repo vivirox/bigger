@@ -11,7 +11,7 @@ import { Brand } from '~/common/app.config';
 import { fixupHost } from '~/common/util/urlUtils';
 
 import { OpenAIWire, WireOpenAICreateImageOutput, wireOpenAICreateImageOutputSchema, WireOpenAICreateImageRequest } from './openai.wiretypes';
-import { azureModelToModelDescription, deepseekModelToModelDescription, groqModelSortFn, groqModelToModelDescription, lmStudioModelToModelDescription, localAIModelToModelDescription, mistralModelsSort, mistralModelToModelDescription, oobaboogaModelToModelDescription, openAIModelFilter, openAIModelToModelDescription, openRouterModelFamilySortFn, openRouterModelToModelDescription, perplexityAIModelDescriptions, perplexityAIModelSort, togetherAIModelsToModelDescriptions } from './models.data';
+import { azureModelToModelDescription, deepseekModelToModelDescription, groqModelSortFn, groqModelToModelDescription, lmStudioModelToModelDescription, localAIModelToModelDescription, mistralModelsSort, mistralModelToModelDescription, openAIModelFilter, openAIModelToModelDescription, perplexityAIModelDescriptions, perplexityAIModelSort, togetherAIModelsToModelDescriptions } from './models.data';
 import { llmsChatGenerateWithFunctionsOutputSchema, llmsGenerateContextSchema, llmsListModelsOutputSchema, ModelDescriptionSchema } from '../llm.server.types';
 import { wilreLocalAIModelsApplyOutputSchema, wireLocalAIModelsAvailableOutputSchema, wireLocalAIModelsListOutputSchema } from './localai.wiretypes';
 
@@ -21,7 +21,7 @@ const ABERRATION_FIXUP_SQUASH = '\n\n\n---\n\n\n';
 
 
 const openAIDialects = z.enum([
-  'azure', 'deepseek', 'groq', 'lmstudio', 'localai', 'mistral', 'oobabooga', 'openai', 'openrouter', 'perplexity', 'togetherai',
+  'azure', 'deepseek', 'groq', 'lmstudio', 'localai', 'mistral', 'openai', 'perplexity', 'togetherai',
 ]);
 type OpenAIDialects = z.infer<typeof openAIDialects>;
 
@@ -196,14 +196,6 @@ export const llmOpenAIRouter = createTRPCRouter({
             .map(mistralModelToModelDescription)
             .sort(mistralModelsSort);
           break;
-
-        // [Oobabooga]: remove virtual models, hidden by default
-        case 'oobabooga':
-          models = openAIModels
-            .map(model => oobaboogaModelToModelDescription(model.id, model.created))
-            .filter(model => !model.hidden);
-          break;
-
         // [OpenAI]: chat-only models, custom sort, manual mapping
         case 'openai':
           models = openAIModels
@@ -256,12 +248,6 @@ export const llmOpenAIRouter = createTRPCRouter({
               // }
               // return bId.localeCompare(aId);
             });
-          break;
-
-        case 'openrouter':
-          models = openAIModels
-            .sort(openRouterModelFamilySortFn)
-            .map(openRouterModelToModelDescription);
           break;
 
       }
@@ -460,7 +446,6 @@ export function openAIAccess(access: OpenAIAccessSchema, modelRefId: string | nu
 
 
     case 'lmstudio':
-    case 'oobabooga':
     case 'openai':
       const oaiKey = access.oaiKey || env.OPENAI_API_KEY || '';
       const oaiOrg = access.oaiOrg || env.OPENAI_API_ORG_ID || '';
@@ -551,23 +536,6 @@ export function openAIAccess(access: OpenAIAccessSchema, modelRefId: string | nu
           'Authorization': `Bearer ${mistralKey}`,
         },
         url: mistralHost + apiPath,
-      };
-
-
-    case 'openrouter':
-      const orKey = access.oaiKey || env.OPENROUTER_API_KEY || '';
-      const orHost = fixupHost(access.oaiHost || DEFAULT_OPENROUTER_HOST, apiPath);
-      if (!orKey || !orHost)
-        throw new Error('Missing OpenRouter API Key or Host. Add it on the UI (Models Setup) or server side (your deployment).');
-
-      return {
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${orKey}`,
-          'HTTP-Referer': Brand.URIs.Home,
-          'X-Title': Brand.Title.Base,
-        },
-        url: orHost + apiPath,
       };
 
     case 'perplexity':

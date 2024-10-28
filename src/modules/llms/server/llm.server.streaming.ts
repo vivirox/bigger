@@ -493,7 +493,7 @@ function createStreamParserOpenAI(): AIStreamParser {
 }
 
 
-function _prepareRequestData({ access, model, history, context: _context }: ChatStreamingInputSchema): {
+function _prepareRequestData({ access, model, history, context: _context }: z.infer<typeof chatStreamingInputSchema>): {
   headers: HeadersInit;
   url: string;
   body: object;
@@ -531,9 +531,7 @@ function _prepareRequestData({ access, model, history, context: _context }: Chat
     case 'lmstudio':
     case 'localai':
     case 'mistral':
-    case 'oobabooga':
     case 'openai':
-    case 'openrouter':
     case 'perplexity':
     case 'togetherai':
       return {
@@ -542,5 +540,9 @@ function _prepareRequestData({ access, model, history, context: _context }: Chat
         vendorMuxingFormat: 'sse',
         vendorStreamParser: createStreamParserOpenAI(),
       };
+
+    default:
+      throw new Error(`Unsupported dialect: ${(access as { dialect: string }).dialect}`);
+
   }
 }

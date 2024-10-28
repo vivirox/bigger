@@ -3,13 +3,6 @@
  * descriptions for the models.
  * (nor does it reliably provide context window sizes - upstream bug: https://github.com/ollama/ollama/issues/1473)
  *
- <<<
- Can you modify the following data structure, according to the updated information from the attached
- web page(https://ollama.ai/library?sort=featured). Be very thorough, do not skip any lines, both in
- the provided file and in the web page. Add/remove to reflect the order in the web page, update
- the *description* and *pulls*, and preserve the existing *added* field on existing entries, or set
- it to 20240126 on new entries.
- >>>
  *
  * from: https://ollama.ai/library?sort=featured
  * Note: the default contextWindow in code is 8192, so we do not redefine that

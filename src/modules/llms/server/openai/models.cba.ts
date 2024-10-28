@@ -20,18 +20,6 @@
 //   'Gemini-1.0-Pro-001': 'models/gemini-1.0-pro-001',
 //   'Gemini Pro': 'models/gemini-pro',
 //
-//   // OpenAI models (from the previous file)
-//   'GPT-4o-2024-05-13': 'gpt-4o-2024-05-13',
-//   'GPT-4o-mini-2024-07-18': 'gpt-4o-mini-2024-07-18',
-//   'GPT-4-Turbo-2024-04-09': 'gpt-4-turbo-2024-04-09',
-//   'GPT-4-1106-preview': 'gpt-4-1106-preview',
-//   'GPT-4-0125-preview': 'gpt-4-0125-preview',
-//   'GPT-4-0314': 'gpt-4-0314',
-//   'GPT-4-0613': 'gpt-4-0613',
-//   'GPT-3.5-Turbo-0613': 'gpt-3.5-turbo-0613',
-//   'GPT-3.5-Turbo-0314': 'gpt-3.5-turbo-0314',
-//   'GPT-3.5-Turbo-0125': 'gpt-3.5-turbo-0125',
-//
 //   // Mistral models (from the previous file)
 //   'Mistral-Large-2402': 'mistral-large-2402',
 //   'Mixtral-8x7b-Instruct-v0.1': 'mistralai/Mixtral-8x7B-Instruct-v0.1',

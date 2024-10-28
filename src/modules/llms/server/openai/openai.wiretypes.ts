@@ -114,7 +114,7 @@ export namespace OpenAIWire {
       id: string;
       object: 'model';
       created: number;
-      owned_by: 'openai' | 'openai-dev' | 'openai-internal' | 'system' | string; // 'user' for Oobabooga models
+      owned_by: 'openai' | 'openai-dev' | 'openai-internal' | 'system' | string; 
       // [2023-11-08] Note: the following properties are not present in OpenAI responses any longer
       // permission: any[];
       // root: string;

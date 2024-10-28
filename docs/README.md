@@ -20,13 +20,10 @@ Detailed guides to configure AI models and advanced features in big-AGI.
   - **[OpenRouter](config-openrouter.md)**
   - Easy API key setup: **Anthropic**, **Deepseek**, **Google AI**, **Groq**, **Mistral**, **OpenAI**, **OpenPipe**, **Perplexity**, **TogetherAI**
 
-
 - **Local AI Integrations**:
   - **[LocalAI](config-local-localai.md)**
   - **[LM Studio](config-local-lmstudio.md)**
   - **[Ollama](config-local-ollama.md)**
-  - **[Oobabooga](config-local-oobabooga.md)**
-
 
 - **Enhanced AI Features**:
   - **[Web Browsing](config-feature-browse.md)**: Enable web page download through third-party services or your own cloud (advanced)
@@ -43,7 +40,6 @@ For deploying a custom big-AGI instance:
 - **[Installation Guide](installation.md)**: Set up your own big-AGI instance
   - Source build or pre-built options
   - Local, cloud, or on-premises deployment
-
 
 - **Advanced Setup**:
   - **[Source Code Customization Guide](customizations.md)**: Modify the source code

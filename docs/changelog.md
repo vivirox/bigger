@@ -1,11 +1,11 @@
-## Changelog
+# Changelog
 
 This is a high-level changelog. Calls out some of the high level features batched
 by release.
 
 - For the live roadmap, please see [the GitHub project](https://github.com/users/enricoros/projects/4/views/2)
 
-### 1.17.0 - Jun 2024
+## 1.17.0 - Jun 2024
 
 - milestone: [1.17.0](https://github.com/enricoros/big-agi/milestone/17)
 - work in progress: [big-AGI open roadmap](https://github.com/users/enricoros/projects/4/views/2), [help here](https://github.com/users/enricoros/projects/4/views/4)
@@ -46,7 +46,7 @@ by release.
 ### What's New in 1.15.0 · April 1, 2024 · Beam
 
 - ⚠️ [**Beam**: the multi-model AI chat](https://big-agi.com/blog/beam-multi-model-ai-reasoning). find better answers, faster - a game-changer for brainstorming, decision-making, and creativity. [#443](https://github.com/enricoros/big-AGI/issues/443)
-- Managed Deployments **Auto-Configuration**: simplify the UI mdoels setup with backend-set models. [#436](https://github.com/enricoros/big-AGI/issues/436)
+- Managed Deployments **Auto-Configuration**: simplify the UI models setup with backend-set models. [#436](https://github.com/enricoros/big-AGI/issues/436)
 - Message **Starring ⭐**: star important messages within chats, to attach them later. [#476](https://github.com/enricoros/big-AGI/issues/476)
 - Enhanced the default Persona
 - Fixes to Gemini models and SVGs, improvements to UI and icons
@@ -65,7 +65,7 @@ by release.
 
 ### What's New in 1.13.0 · Feb 8, 2024 · Multi + Mind
 
-https://github.com/enricoros/big-AGI/assets/32999/01732528-730e-41dc-adc7-511385686b13
+<https://github.com/enricoros/big-AGI/assets/32999/01732528-730e-41dc-adc7-511385686b13>
 
 - **Side-by-Side Split Windows**: multitask with parallel conversations. [#208](https://github.com/enricoros/big-AGI/issues/208)
 - **Multi-Chat Mode**: message everyone, all at once. [#388](https://github.com/enricoros/big-AGI/issues/388)
@@ -77,7 +77,7 @@ https://github.com/enricoros/big-AGI/assets/32999/01732528-730e-41dc-adc7-511385
 
 ### What's New in 1.12.0 · Jan 26, 2024 · AGI Hotline
 
-https://github.com/enricoros/big-AGI/assets/32999/95ceb03c-945d-4fdd-9a9f-3317beb54f3f
+<https://github.com/enricoros/big-AGI/assets/32999/95ceb03c-945d-4fdd-9a9f-3317beb54f3f>
 
 - **Voice Calls**: real-time voice call your personas out of the blue or in relation to a chat [#354](https://github.com/enricoros/big-AGI/issues/354)
 - Support **OpenAI 0125** Models. [#364](https://github.com/enricoros/big-AGI/issues/364)
@@ -90,7 +90,7 @@ https://github.com/enricoros/big-AGI/assets/32999/95ceb03c-945d-4fdd-9a9f-3317be
 
 ### What's New in 1.11.0 · Jan 16, 2024 · Singularity
 
-https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cfcb110c68
+<https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cfcb110c68>
 
 - **Find chats**: search in titles and content, with frequency ranking. [#329](https://github.com/enricoros/big-AGI/issues/329)
 - **Commands**: command auto-completion (type '/'). [#327](https://github.com/enricoros/big-AGI/issues/327)
@@ -138,7 +138,7 @@ https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cf
 - **Overheat LLMs**: Push the creativity with higher LLM temperatures. [#256](https://github.com/enricoros/big-agi/issues/256)
 - **Model Options Shortcut**: Quick adjust with `Ctrl+Shift+O`
 - Optimized Voice Input and Performance
-- Latest Ollama and Oobabooga models
+- Latest Ollama
 - For developers: **Password Protection**: HTTP Basic Auth. [Learn How](https://github.com/enricoros/big-agi/blob/main/docs/deploy-authentication.md)
 
 ### What's New in 1.6.0 - Nov 28, 2023 · Surf's Up
@@ -165,10 +165,10 @@ https://github.com/enricoros/big-AGI/assets/1590910/a6b8e172-0726-4b03-a5e5-10cf
 
 For Developers:
 
-- Runtime Server-Side configuration:  https://github.com/enricoros/big-agi/issues/189. Env vars are
+- Runtime Server-Side configuration:  <https://github.com/enricoros/big-agi/issues/189>. Env vars are
   not required to be set at build time anymore. The frontend will roundtrip to the backend at the
   first request to get the configuration. See
-  https://github.com/enricoros/big-agi/blob/main/src/modules/backend/backend.router.ts.
+  <https://github.com/enricoros/big-agi/blob/main/src/modules/backend/backend.router.ts>.
 - CloudFlare developers: please change the deployment command to
   `rm app/api/trpc-node/[trpc]/route.ts && npx @cloudflare/next-on-pages@1`,
   as we transitioned to the App router in NextJS 14. The documentation in
@@ -187,7 +187,6 @@ For Developers:
 - **Camera OCR** - real-world AI - take a picture of a text, and chat with it
 - **Anthropic models** support, e.g. Claude
 - **Backup/Restore** - save chats, and restore them later
-- **[Local model support with Oobabooga server](../docs/config-local-oobabooga)** - run your own LLMs!
 - **Flatten conversations** - conversations summarizer with 4 modes
 - **Fork conversations** - create a new chat, to try with different endings
 - New commands: /s to add a System message, and /a for an Assistant message
