@@ -21,11 +21,7 @@ let nextConfig = {
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     // trailingSlash: true,
   },
-
-  // [puppeteer] https://github.com/puppeteer/puppeteer/issues/11052
-  experimental: {
-    serverComponentsExternalPackages: ['puppeteer-core'],
-  },
+  serverExternalPackages: ['puppeteer-core'],
 
   webpack: (config, _options) => {
     // @mui/joy: anything material gets redirected to Joy
