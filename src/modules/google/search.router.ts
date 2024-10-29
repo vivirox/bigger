@@ -55,7 +55,9 @@ export const googleSearchRouter = createTRPCRouter({
 
 
 function objectToQueryString(params: Record<string, any>): string {
-  return Object.entries(params)
-    .map(([key, value]) => encodeURIComponent(key) + '=' + encodeURIComponent(value))
-    .join('&');
+  const searchParams = new URLSearchParams();
+  for (const [key, value] of Object.entries(params)) {
+    searchParams.append(key, value);
+  }
+  return searchParams.toString();
 }

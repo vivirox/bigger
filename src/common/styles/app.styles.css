@@ -13,5 +13,6 @@
 
 /* Prevents pull-to-refresh on mobile, so it's not triggered while scrolling the chat inadvertently */
 body {
-    overscroll-behavior-y: none;
+    touch-action: none;
+    overflow: hidden;
 }

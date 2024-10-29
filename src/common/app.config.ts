@@ -13,9 +13,9 @@ export const Brand = {
   },
   Meta: {
     Description: 'Launch big-AGI to unlock the full potential of AI, with precise control over your data and models. Voice interface, AI personas, advanced features, and fun UX.',
-    SiteName: 'big-AGI | Precision AI for You',
+    SiteName: 'Gem City AGI',
     ThemeColor: '#32383E',
-    TwitterSite: '@enricoros',
+    TwitterSite: '@gemcityxyz',
   },
   URIs: {
     Home: 'https://big-agi.com',

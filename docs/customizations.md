@@ -6,12 +6,17 @@ This document outlines how to develop applications derived from big-AGI.
 
 Application customization _requires manual code modifications or the use of environment variables_. Currently, **there is no admin panel to "managed" deployment customization** for enterprise use cases.
 
-| Required Code Alteration                                                              | Not Required                                                                                                              |
-|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| - Persona changes<br>- UI theme customization<br>- Feature additions or modifications | - Setting API keys in [environment variables](environment-variables.md)<br>- Toggling features with environment variables |
-| Apply these to the source code before building the application                        | Set these post-build on local machines or cloud deployment, before application launch                                     |
+Required Code Alteration
 
-<br/>
+Not Required
+
+Persona changes
+UI theme customization
+Feature additions or modifications
+Setting API keys in [environment variables](environment-variables.md
+Toggling features with environment variables
+Apply these to the source code before building the application
+Set these post-build on local machines or cloud deployment, before application launch
 
 ## Code Alterations
 
@@ -67,20 +72,19 @@ Test your application thoroughly using local development (refer to README.md for
 
 We introduced the `/info/debug` page that provides a detailed overview of the application's environment, including the API keys, environment variables, and other configuration settings.
 
-<br/>
-
 ## Community Projects - Share Your Project
 
 After deployment, share your project with the community. We will link to your project to help others discover and learn from your work.
 
-| Project                                                                                                                                                        | Features                                                                                                  | GitHub                                                                              |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| 🚀 CoolAGI: Where AI meets Imagination<br/>![CoolAGI Logo](https://github.com/nextgen-user/freegpt4plus/assets/150797204/9b0e1232-4791-4d61-b949-16f9eb284c22) | Code Interpreter, Vision, Mind maps, Web Searches, Advanced Data Analytics, Large Data Handling and more! | [nextgen-user/CoolAGI](https://github.com/nextgen-user/CoolAGI)                     |
-| HL-GPT                                                                                                                                                         | Fully remodeled UI                                                                                        | [harlanlewis/nextjs-chatgpt-app](https://github.com/harlanlewis/nextjs-chatgpt-app) |
+Project
+
+🚀 CoolAGI: Where AI meets Imagination
+
+![CoolAGI Logo](https://github.com/nextgen-user/freegpt4plus/assets/150797204/9b0e1232-4791-4d61-b949-16f9eb284c22)
+
+Code Interpreter, Vision, Mind maps, Web Searches, Advanced Data Analytics, Large Data Handling and more!
 
 For public projects, update your README.md with your modifications and submit a pull request to add your project to our list, aiding in its discovery.
-
-<br/>
 
 ## Best Practices
 

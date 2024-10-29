@@ -38,7 +38,7 @@ export const DesktopNavIcon = styled(IconButton)(({ theme }) => ({
 
   // border: '1px solid red',
   marginBlock: 'var(--GroupMarginY)',
-  //marginInline: .. not needd because we center the items
+  //marginInline: .. not needed because we center the items
   padding: 0,
 
   [`&.${navItemClasses.typeApp},&.${navItemClasses.typeLinkOrModal}`]: {

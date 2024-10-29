@@ -35,31 +35,6 @@ export const appTheme = extendTheme({
     code: jetBrainsMono.style.fontFamily,
   },
   colorSchemes: {
-    light: {
-      palette: {
-        neutral: {
-          plainColor: 'var(--joy-palette-neutral-800)',     // [700 -> 800] Dropdown menu: increase text contrast a bit
-          solidBg: 'var(--joy-palette-neutral-700)',        // [500 -> 700] PageBar background & Button[solid]
-          solidHoverBg: 'var(--joy-palette-neutral-800)',   // [600 -> 800] Buttons[solid]:hover
-        },
-        // primary [800] > secondary [700 -> 800] > tertiary [600] > icon [500 -> 700]
-        text: {
-          icon: 'var(--joy-palette-neutral-700)',           // <IconButton color='neutral' /> icon color
-          secondary: 'var(--joy-palette-neutral-800)',      // increase contrast a bit
-          // tertiary: 'var(--joy-palette-neutral-700)',       // increase contrast a bit
-        },
-        // popup [white] > surface [50] > level1 [100] > level2 [200] > level3 [300 -> unused] > body [white -> 300]
-        background: {
-          // New
-          surface: 'var(--joy-palette-neutral-50, #FBFCFE)',
-          level1: 'var(--joy-palette-neutral-100, #F0F4F8)',
-          level2: 'var(--joy-palette-neutral-200, #DDE7EE)',
-          body: 'var(--joy-palette-neutral-300, #CDD7E1)',
-          // Former
-          // body: 'var(--joy-palette-neutral-400, #9FA6AD)',
-        },
-      },
-    },
     dark: {
       palette: {
         text: {
@@ -155,7 +130,7 @@ export const themeZIndexOverMobileDrawer = 1301;
 export const themeBreakpoints = appTheme.breakpoints.values;
 
 
-// Dyanmic UI Sizing
+// Dynamic UI Sizing
 export type ContentScaling = 'xs' | 'sm' | 'md';
 
 export function adjustContentScaling(scaling: ContentScaling, offset?: number) {
